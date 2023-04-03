@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" type="image/svg+xml" href="/vite.svg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Cuts & Shavez Salon</title>
+		<link rel="stylesheet" href="src/css/tailwind.css" />
+		<!-- TODO: make this more SEO -->
+	</head>
+
+	<body>
+		<main>
+			<nav
+				class="p-6 flex justify-between w-full fixed top-0 z-[100] bg-[#131313] border-b-2 border-[#242424]"
+			>
+				<a
+					href="#home"
+					class="font-serif text-base font-semibold flex items-center gap-4"
+				>
+					<img src="src/assets/logo.svg" alt="cuts & shavez salon logo" /> Cuts
+					& Shavez Salon
+				</a>
+
+				<ul class="hidden md:flex gap-6 items-center">
+					<li>
+						<a href="#home" class="font-serif font-semibold scroll-smooth"
+							>Home</a
+						>
+					</li>
+					<li>
+						<a href="#reviews" class="font-serif font-semibold scroll-smooth"
+							>Reviews</a
+						>
+					</li>
+					<li>
+						<a
+							href="#services-pricing"
+							class="font-serif font-semibold scroll-smooth"
+							>Services & Pricing</a
+						>
+					</li>
+					<li>
+						<a href="#gallery" class="font-serif font-semibold scroll-smooth"
+							>Gallery</a
+						>
+					</li>
+					<li>
+						<a href="#contact" class="font-serif font-semibold scroll-smooth"
+							>Contact us</a
+						>
+					</li>
+				</ul>
+
+				<button id="open-sidebar" class="md:hidden">
+					<img src="src/assets/burger.svg" alt="burger icon" />
+				</button>
+			</nav>
+
+			<section
+				id="home"
+				class="w-screen h-screen relative flex md:flex-row-reverse items-center border-b-2 border-[#242424]"
+			>
+				<img
+					src="src/assets/hero.png"
+					alt="hero barbershop image"
+					class="h-screen object-cover absolute opacity-60 md:relative md:w-1/2"
+				/>
+				<div class="md:relative z-50 text-white p-6 w-1/2">
+					<h1 class="font-serif text-8xl 2xl:text-9xl font-semibold">
+						Cuts & <br />
+						Shavez <br />
+						Salon
+					</h1>
+					<p class="font-sans text-base opacity-60 mt-6 mb-12">
+						Lorem ipsum dolor sit amet consectetur. Ut placerat ut molestie sed
+						volutpat amet morbi.
+					</p>
+					<a class="cta"> Book Appointment </a>
+				</div>
+			</section>
+
+			<section id="reviews" class="p-6 mt-20">
+				<!-- Quotes -->
+				<div class="flex flex-col md:flex-row gap-12">
+					<p class="quote">
+						<img src="src/assets/quote.svg" alt="quote" class="mr-1" />
+						One of the best haircuts i have ever got. Superb talent. Clean, neat
+						and very good with their work. Worth the money.
+					</p>
+					<p class="quote">
+						<img src="src/assets/quote.svg" alt="quote" class="mr-1" />
+						Best salon.. friendly especially Kinan, The cleanliness of the
+						place, as well as the experience in shaving, and there is no
+						mistake. It is considered the most wonderful salon in the Kingdom of
+						Bahrain
+					</p>
+					<p class="quote">
+						<img src="src/assets/quote.svg" alt="quote" class="mr-1" />
+						Really it was from the best salon that I go. The staff very friendly
+						the best in making haircuts very thankful for your service…
+					</p>
+				</div>
+
+				<!-- Review -->
+				<div class="flex flex-col items-center mt-16">
+					<h1 class="font-sans text-8xl font-semibold">4.7</h1>
+					<div class="flex gap-4 mt-4">
+						<img src="src/assets/star.svg" alt="star" />
+						<img src="src/assets/star.svg" alt="star" />
+						<img src="src/assets/star.svg" alt="star" />
+						<img src="src/assets/star.svg" alt="star" />
+						<img src="src/assets/half-star.svg" alt="half star" />
+					</div>
+					<p class="opacity-80 mt-8">Reviewed as 4.7/5 by 208 people...</p>
+				</div>
+			</section>
+
+			<section id="chair" class="p-6 mt-28 flex flex-col md:flex-row md:items-center">
+				<div class="md:w-1/2 flex items-center justify-center">
+					<img src="src/assets/chair.png" alt="barber chair" class="w-3/4" />
+				</div>
+				<div class="mt-12 md:mt-0 md:w-1/2 md:pl-8">
+					<h1 class="font-serif text-6xl font-bold">
+						The Best <br />
+						in <span class="border-b-2 font-serif">Bahrain</span>
+					</h1>
+					<p class="mt-8 mb-16 opacity-80">
+						Lorem ipsum dolor sit amet consectetur. Orci aliquam malesuada
+						consectetur nunc fermentum nibh consequat. Egestas nulla dolor enim
+						dolor. Suspendisse ipsum arcu sollicitudin a interdum.
+					</p>
+					<a href="#contact" class="cta">Book Appointment</a>
+				</div>
+			</section>
+
+			<section id="services-pricing" class="p-6 mt-28">
+				<img src="src/assets/haircut-1.png" alt="haircut" class="saturate-0" />
+				<div>
+					<h1 class="font-serif text-6xl font-bold mt-12">What we offer...</h1>
+				</div>
+			</section>
+		</main>
+
+		<!-- Sidebar -->
+		<div
+			class="absolute top-0 left-0 w-full h-full bg-[#131313] p-6 fle hidden items-center"
+		>
+			<button id="close-sidebar" class="absolute top-6 left-6">
+				<img src="src/assets/cross.svg" alt="cross close icon" />
+			</button>
+
+			<ul class="font-medium text-6xl">
+				<!-- Each list is a link that is supposed to close the bar on click -->
+				<li class="mb-4">
+					<a class="sidebar-link-hover" href="#home">Home</a>
+				</li>
+				<li class="mb-4">
+					<a class="sidebar-link" href="#reviews">Reviews</a>
+				</li>
+				<li class="mb-4">
+					<a class="sidebar-link" href="#services-pricing"
+						>Services & Pricing</a
+					>
+				</li>
+				<li class="mb-4">
+					<a class="sidebar-link" href="#gallery">Gallery</a>
+				</li>
+				<li class="mb-4">
+					<a class="sidebar-link" href="#contact">Contact Us</a>
+				</li>
+			</ul>
+		</div>
+	</body>
+</html>

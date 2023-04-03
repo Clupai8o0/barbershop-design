@@ -1,0 +1,33 @@
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900);
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display:regular,500,600,700,800,900,italic,500italic,600italic,700italic,800italic,900italic);
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+	background: #131313;
+	overflow-x: hidden;
+}
+
+* {
+	color: white;
+	font-family: Inter, Arial, Helvetica, sans-serif;
+}
+
+@layer components {
+	.sidebar-link {
+		@apply font-serif opacity-60;
+	}
+	.sidebar-link-hover {
+		@apply font-serif opacity-100 text-[64px] font-semibold transition-all duration-300;
+	}
+
+	.cta {
+		@apply font-sans font-semibold text-white px-12 py-4 border-2 border-white hover:bg-white hover:text-black focus:bg-white focus:text-black transition-all duration-300 ease-in-out cursor-pointer;
+	}
+
+	.quote {
+		@apply font-serif text-xl font-medium flex items-start;
+	}
+}
