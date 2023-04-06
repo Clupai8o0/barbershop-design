@@ -525,16 +525,6 @@ video {
   opacity: 0.6;
 }
 
-.sidebar-link-hover{
-  font-family: Playfair Display, serif;
-  font-size: 64px;
-  font-weight: 600;
-  opacity: 1;
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 300ms;
-}
-
 .cta{
   cursor: pointer;
   border-width: 2px;
@@ -574,6 +564,20 @@ video {
   font-size: 1.25rem;
   line-height: 1.75rem;
   font-weight: 500;
+}
+
+.gallery-img{
+  cursor: pointer;
+  --tw-saturate: saturate(0);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
+
+.gallery-img:hover{
+  --tw-saturate: saturate(1);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
 .fixed{
@@ -620,8 +624,16 @@ video {
   top: 1.5rem;
 }
 
+.z-10{
+  z-index: 10;
+}
+
 .z-50{
   z-index: 50;
+}
+
+.z-\[100000\]{
+  z-index: 100000;
 }
 
 .z-\[100\]{
@@ -746,6 +758,19 @@ video {
 
 .flex-1{
   flex: 1 1 0%;
+}
+
+.translate-x-full{
+  --tw-translate-x: 100%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.transform{
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.cursor-pointer{
+  cursor: pointer;
 }
 
 .flex-row{
@@ -901,6 +926,24 @@ video {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
+.transition-all{
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.duration-300{
+  transition-duration: 300ms;
+}
+
+.duration-500{
+  transition-duration: 500ms;
+}
+
+.ease-\[cubic-bezier\(0\.65\2c 0\.05\2c 0\.36\2c 1\)\]{
+  transition-timing-function: cubic-bezier(0.65,0.05,0.36,1);
+}
+
 body {
   background: #131313;
   overflow-x: hidden;
@@ -911,6 +954,15 @@ body {
 * {
   color: white;
   font-family: Inter, Arial, Helvetica, sans-serif;
+}
+
+a {
+  scroll-behavior: smooth;
+}
+
+.hover\:saturate-100:hover{
+  --tw-saturate: saturate(1);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
 @media (min-width: 768px){

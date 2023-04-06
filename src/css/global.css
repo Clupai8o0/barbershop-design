@@ -17,6 +17,10 @@ body {
 	font-family: Inter, Arial, Helvetica, sans-serif;
 }
 
+a {
+	scroll-behavior: smooth;
+}
+
 @layer components {
 	.sidebar-link {
 		@apply font-serif opacity-60;
@@ -31,5 +35,9 @@ body {
 
 	.quote {
 		@apply font-serif text-xl font-medium flex items-start;
+	}
+
+	.gallery-img {
+		@apply saturate-0 hover:saturate-100 transition-all duration-300 cursor-pointer;
 	}
 }
