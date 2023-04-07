@@ -9,7 +9,7 @@ serviceImg.addEventListener("click", () => {
 function nextImg() {
 	if (i < 4) i += 1;
 	else if (i === 4) i = 1;
-	serviceImg.setAttribute("src", `src/assets/haircut-${i}.png`);
+	serviceImg.setAttribute("src", `haircut-${i}.png`);
 }
 
 let interval;
